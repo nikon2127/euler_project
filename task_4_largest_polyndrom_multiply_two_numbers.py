@@ -13,16 +13,23 @@ def largest_polyndrom_multiply_two_numbers(max_num_to_multiply):
     result = 0
     i = max_num_to_multiply
     count_iter = 0
-    while i >= 1:
+    while i >= max_num_to_multiply / 10:
         n = max_num_to_multiply
         while n >= max_num_to_multiply - count_iter:
-            result = i * n
-            if is_polyndrom(result):
-                return result
+            if is_polyndrom(i * n) and result < i * n:
+                result = i * n
             n -= 1
         count_iter += 1
         i -= 1
-    return 0
+    return result
+
+
+def compute(num):
+    ans = max(i * j for i in range(int(num / 10), int(num)) for j in range(int(num / 10), int(num)) if str(i * j) == str(i * j)[::-1])
+    return ans
+
+
+print(compute(1000))
 
 
 print(largest_polyndrom_multiply_two_numbers(99))
