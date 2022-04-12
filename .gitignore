@@ -9,6 +9,9 @@ __pycache__/
 # vscode
 .vscode
 
+# venv
+euler_venv
+
 # Distribution / packaging
 .Python
 build/
