@@ -14,6 +14,11 @@ def smallest_multiple_of_range(start, end):
         result += 2
 
 
-print(smallest_multiple_of_range(1, 10))
-print(smallest_multiple_of_range(1, 15))
-print(smallest_multiple_of_range(1, 20))
+def main():
+    print(smallest_multiple_of_range(1, 10))
+    print(smallest_multiple_of_range(1, 15))
+    print(smallest_multiple_of_range(1, 20))
+
+
+if __name__ == '__main__':
+    main()

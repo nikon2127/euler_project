@@ -22,5 +22,10 @@ def greatest_prime_divisor(num):
     return 1
 
 
-print(greatest_prime_divisor(13195))
-print(greatest_prime_divisor(600851475143))
+def main():
+    print(greatest_prime_divisor(13195))
+    print(greatest_prime_divisor(600851475143))
+
+
+if __name__ == '__main__':
+    main()

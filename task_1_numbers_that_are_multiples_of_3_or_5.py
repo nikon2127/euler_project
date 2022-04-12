@@ -13,5 +13,10 @@ def sum_of_multiples_of_3_or_5(max_num, first_mult=3, second_mult=5):
     return result
 
 
-print(sum_of_multiples_of_3_or_5(1000))
-print(sum_of_multiples_of_3_or_5(10000, 5, 7))
+def main():
+    print(sum_of_multiples_of_3_or_5(1000))
+    print(sum_of_multiples_of_3_or_5(10000, 5, 7))
+
+
+if __name__ == '__main__':
+    main()

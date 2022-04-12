@@ -29,9 +29,12 @@ def compute(num):
     return ans
 
 
-print(compute(1000))
+def main():
+    print(compute(1000))
+    print(largest_polyndrom_multiply_two_numbers(99))
+    print(largest_polyndrom_multiply_two_numbers(999))
+    print(largest_polyndrom_multiply_two_numbers(80))
 
 
-print(largest_polyndrom_multiply_two_numbers(99))
-print(largest_polyndrom_multiply_two_numbers(999))
-print(largest_polyndrom_multiply_two_numbers(80))
+if __name__ == '__main__':
+    main()

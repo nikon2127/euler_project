@@ -18,4 +18,9 @@ def sum_of_all_even_numbers_fibonacci(max_num):
     return result
 
 
-print(sum_of_all_even_numbers_fibonacci(40))
+def main():
+    print(sum_of_all_even_numbers_fibonacci(4000000))
+
+
+if __name__ == '__main__':
+    main()
